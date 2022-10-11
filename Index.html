@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your One Stop Point for All Kind of Graphics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="/Images/Graphics Quest Icon.svg">
+</head>
+<body>
+     <div class="navbar">
+         <div class="container">
+             <a class="logo" href="Index.html">Chris' <span>Quest</span></a>
+             
+
+             <img id="mobile-cta" class="mobile-menu" src="images/Menu.svg" alt="Open Navigation">
+             <nav>
+                 <img id="mobile-exit" class="mobile-menu-exit" src="images/Exit.svg" alt="close Navigation"> 
+                 <ul class="primary-nav">
+                     <li class="current"><a href= "Index.html ">Home</a></li>
+                     <li><a href= "#">Services</a></li>
+                     <li><a href= "#">About</a></li>
+                     
+                 </ul>
+
+                 <ul class="secondary-nav">
+                    
+                    <li><a href= "#">Contact Us</a></li>
+                    <li class="booking-cta"><a href= "#">Booking</a></li>
+                   
+                 </ul>
+             </nav>  
+         </div>
+     </div>
+     <section class="hero">
+         <div class="container">
+             <div class="left-col">
+                 <p class="subhead">One Stop Center For Awesomeness</p>
+                 <h1>Creative, Innovative &amp; Impressive Graphics.</h1>
+                 <div class="hero-cta">
+                     <a href="#" class="primary-cta">Try For Free</a>
+                     <a target="_blank" href= "./Videos/Climbing men.mp4"class="watch-video-cta">
+                         <img src="images/Watch Video.svg" alt="Video Graphics">Watch A Video
+                     </a>
+                 </div>
+             </div>
+             <img src="images/My Children.jpg"class="hero-img" alt="Children">
+         </div>
+
+     </section>
+     
+     <section class="features-section">
+         <div class="container">
+             <ul class="features-list">
+                 <li> Video Editing</li>
+                 <li> Wedding and All kinds of Functions Photography</li>
+                 <li> Motion Graphics and Animations</li>
+                 <li> Responsive Web Designing</li>
+                 <li> Branding and Logo Designing</li>
+             </ul>
+             <img src="images/Camera.jpg" alt="Tools and Desk">
+
+             <video controls height="250" width="500" src="./Videos/Final Montage Slideshow.mp4"></video>
+         </div>
+     </section>
+<section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="images/topher.jpg" alt="Topher">
+
+                <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ea nisi doloremque corporis facilis dicta harum sed, sint eum aliquid, impedit velit dignissimos modi blanditiis ullam illo ex rem omnis!</blockquote>
+                <cite>Topher Aine</cite>
+            </li>
+            <li>
+                <img src="images/Chloe.jpg" alt="Chloe">
+
+                <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ea nisi doloremque corporis facilis dicta harum sed, sint eum aliquid, impedit velit dignissimos modi blanditiis ullam illo ex rem omnis!</blockquote>
+                <cite>Chloe Namanya</cite>
+            </li>
+            <li>
+                <img src="images/Cynthia.jpg" alt="Cynthia">
+
+                <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ea nisi doloremque corporis facilis dicta harum sed, sint eum aliquid, impedit velit dignissimos modi blanditiis ullam illo ex rem omnis!</blockquote>
+                <cite>Cynthia Ayebazibwe</cite>
+            </li>
+        </ul>
+    </div>
+
+</section>
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contact</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send Message">
+            </form>
+        </div>
+        <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.721352477578!2d33.02437331526355!3d0.39946236400156815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x294a8603ef5f3e2e!2zMMKwMjMnNTguMSJOIDMzwrAwMSczNS42IkU!5e0!3m2!1sen!2sug!4v1638187252632!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    }) 
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    }) 
+    
+    
+
+
+</script>
+<footer>
+    <p>www.thechrisquest.com, Copyright &copy; 2021</p>
+</footer>
+</body>
+</html>
